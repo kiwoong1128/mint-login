@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <style>
+    header img {
+      display:block;
+      width: 380px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    body {
+      background-color: rgb(236,238,241);
+      font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    a {
+      color: rgb(0,119,197);
+      text-decoration: none;
+    }
+
+    h1{
+      font-weight: lighter;
+    }
+
+    #sign-up {
+      background-color: white;
+      color: rgb(76,76,76);
+      padding: 10px;
+      border: 1px solid #CCC;
+      border-radius: 0;
+      text-align:center;
+      width: 380px;
+      padding: 30px;
+      overflow: visible;
+      box-sizing: border-box;
+      margin: auto;
+    }
+
+    form {
+      font-size: 14px;
+    }
+
+    label {
+      /* Uniform size & alignment */
+      display: block;
+      width: 320px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    input {
+      /* Uniform text field size */
+      height:34px;
+      width: 320px;
+      padding-left:8px;
+      padding-right: 6px;
+      box-sizing: border-box;
+      border-radius: 3px;
+
+      /* Match form field borders */
+      border: 1px solid #d8d8d8;
+      outline: none;
+      line-height: 1.3em;
+      margin-bottom: 40px;
+    }
+
+    input:focus {
+      /* Additional highlight for focused elements */
+      border-color: rgb(117, 185, 240);
+      box-shadow: 0px 0px 5px 5px rgba(117, 185, 240, 25%);
+    }
+
+    button {
+      /* This extra margin represent roughly the same space as the space
+         between the labels and their text fields */
+      width: 320px;
+      height: 40px;
+      background-color: rgb(0, 119, 197);
+      border: none;
+      border-radius: 5px;
+      margin-top: -5px;
+      color: white;
+    }
+
+    #footer-tos {
+      width: 280px;
+      font-style: italic;
+      display:block;
+      margin-top: 40px;
+      font-size: 12px;
+      font-weight: ligher;
+      color: rgb(117, 117, 117);
+      line-height: 20px;
+    }
+
+    #recaptcha{
+      display: block;
+
+      width: 378px;
+      height:40px;
+      background-color: rgb(236, 238, 241);
+      color: rgb(141, 145, 153);
+      font-size: 10px;
+      margin-top: 30px;
+      margin-left: -30px;
+      margin-bottom: -30px;
+      padding-top: 30px;
+    }
+
+    #rates {
+      display: block;
+      font-size: 10px;
+      text-align: left;
+      margin-top: -33px;
+      margin-bottom: 30px;
+    }
+    #button-lock {
+      height: 15px;
+      margin-bottom: -2px;
+      margin-left: -20px;
+      margin-right: 5px;
+    }
+    #legal {
+      display: block;
+      box-sizing: border-box;
+      width: 650px;
+      margin: 0 auto;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #505050
+      width: 200px;
+      margin-top: 40px;
+      text-align: center;
+    }
+</style>
+
+
+
+</head>
+
+
+<body>
+  <header>
+    <img src="images\logo.JPG">
+  </header>
+    <section id="sign-up">
+      <header>
+        <h1>Create an Intuit account</h1>
+        <p style="font-size: 14px">One account for everything Intuit, including Mint.
+          <br><a href="https://accounts-help.lc.intuit.com/questions/1582580-
+          creating-an-account" style="font-size: 12px">Learn more</a>
+        </p>
+
+      </header>
+
+      <form id="form-sign-up" action="/my-handling-form-page" method="post">
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail" name="user_email" required>
+
+          <label for="phone">Phone (recommended)</label>
+          <input type="text" id="name" name="user_phone">
+          <br>
+          <span id="rates">Standard call, messaging or data rates may apply. </span>
+
+          <label for="Password":>Password</label>
+          <input type="password" id="password" name="user_pass">
+
+          <button type="submit"><img src="images\button-lock.jpg" id="button-lock">
+               Create Account</button>
+
+      </form>
+
+      <footer>
+        <span id="footer-tos">By clicking Create account, you agree to our<br>
+        <a href="https://www.mint.com/terms">Terms</a> and have read and
+        acknowledge our <a href="https://security.intuit.com/privacy">Privacy
+          Statement</a>.</span>
+
+        <span id="recaptcha">Invisible reCAPTCHA by Google
+          <a href="https://www.google.com/intl/en/policies/privacy/">
+          Privacy Policy </a>
+          and
+          <a href="https://www.google.com/intl/en/policies/terms/">
+          Terms of Use.
+          </a>
+          </span>
+      </footer>
+    </section>
+    <div id="legal"> Legal Privacy Security <br>
+      © 2020 Intuit, Inc. All rights reserved.
+      Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+      Terms and conditions, features, support, pricing, and service options subject to change without notice.
+</div>
+</body>
+
+
+
+
+</html>
